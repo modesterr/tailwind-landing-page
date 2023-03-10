@@ -972,14 +972,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left; */
-  background-image: url("/img/magicpattern-blob-1676821691243.svg");
+  background-image: url(../img/magicpattern-blob-1676821691243.svg);
   background-repeat: no-repeat;
   background-size: 70rem;
   background-position: 30% -3%;
 }
 
 #cta {
-  background-image: url("/img/blob-1.svg");
+  background-image: url(../img/blob-1.svg);
   background-repeat: no-repeat;
   background-size: 20rem;
   background-position: 60% 70%;
@@ -992,7 +992,7 @@ body {
   }
 
   #cta {
-    background-image: url("/img/blob-1.svg");
+    background-image: url(../img/blob-1.svg);
     background-repeat: no-repeat;
     background-size: 40rem;
     background-position: 60% -10%;
@@ -1070,16 +1070,6 @@ body {
 .hover\:text-purple-900:hover {
   --tw-text-opacity: 1;
   color: rgb(88 28 135 / var(--tw-text-opacity));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-green-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(134 239 172 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {

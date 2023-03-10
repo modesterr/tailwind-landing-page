@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* background-color: rgb(252, 238, 252); */
+  /* background-image: linear-gradient(
+      to right bottom,
+      rgba(240, 197, 240, 0.89),
+      rgba(240, 197, 240, 0.589)
+    ),
+    url("/img/magicpattern-blob-1676821691243.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left; */
+
+  background-image: url(../img/magicpattern-blob-1676821691243.svg);
+  background-repeat: no-repeat;
+  background-size: 70rem;
+  background-position: 30% -3%;
+}
+
+#cta {
+  background-image: url(../img/blob-1.svg);
+  background-repeat: no-repeat;
+  background-size: 20rem;
+  background-position: 60% 70%;
+}
+
+@media (max-width: 576px) {
+  body {
+    background-position: 50% -30%;
+    background-size: 300px;
+  }
+
+  #cta {
+    background-image: url(../img/blob-1.svg);
+    background-repeat: no-repeat;
+    background-size: 40rem;
+    background-position: 60% -10%;
+  }
+}
+
+/* hamburger menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: rgb(128, 0, 79);
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
